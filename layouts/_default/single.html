@@ -3,7 +3,7 @@
 <style type="text/css">
     header.intro-header {
         background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL}}{{ end }}');
-  max-height: 440px
+  max-height: 350px
     }
 </style>
 {{ if eq .Params.headerstyle "text" }}
@@ -13,18 +13,18 @@
 {{ end }}
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-0 col-lg-offset-0 col-md-0 col-md-offset-0">
                 <div class="post-heading">
-                    <div class="tags">
+                   <!--   <div class="tags">
                         {{ range .Params.tags }}
                         <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" title="{{ . }}">
                             {{ . }}
                         </a>
                         {{ end }}
-                    </div>
+                    </div>-->
                     <h1>{{ .Title }}</h1>
-                    <h2 class="subheading">{{ .Params.subtitle }}</h2>
-                    <span class="meta">
+                   <!--  <h2 class="subheading">{{ .Params.subtitle }}</h2> -->
+            <!--         <span class="meta">
                         {{ if .Params.metadata }}
                             {{ range $index, $element := .Params.metadata }}
                                 {{ if .link }}
@@ -33,7 +33,7 @@
                                     {{ .text }}
                                 {{ end }}
                             {{ end }}
-                        {{ else }}
+                      <!--  {{ else }}
                             Posted by 
                             {{ if .Params.author }}
                                 {{ .Params.author }}
@@ -46,10 +46,10 @@
                                 {{ partial "page_view_counter.html" . }}
                             {{ end }}
                             <!-- Don't show "Last Modified on" if update happened on the same day. -->
-                            {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
+                          <!--  {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
                             <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }}
                             {{ end }}
-                        {{ end }}    
+                        {{ end }}  -->  
                     </span>
                 </div>
             </div>
@@ -79,11 +79,11 @@
                 {{ end }}
                 -->
                 {{ .Content }}
-
+                {{ partial "comments.html" . }}
                 {{ if .Site.Params.reward }}
                 {{ partial "reward.html" . }}
                 {{ end }}
-
+                
                 <hr>
                 <ul class="pager">
                     {{ if .PrevInSection }}
@@ -99,7 +99,7 @@
                     </li>
                     {{ end }}
                 </ul>
-                {{ partial "comments.html" . }}
+
             </div>
 
             <!-- Side Catalog Container -->
@@ -112,7 +112,7 @@
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
+                        <a class="catalog-toggle" href="#">Content</a>
                     </h5>
                     <ul class="catalog-body"></ul>
                 </div>
@@ -132,7 +132,7 @@
                 {{ if .Site.Params.featured_tags }}
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">TAG NAVIGATION</a></h5>
+                    <h5><a href="/tags/">Tag Nav</a></h5>
                     <div class="tags">
                         {{ $featured_condition_size := .Site.Params.featured_condition_size }}
                         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
