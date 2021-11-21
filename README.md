@@ -2,11 +2,9 @@
 
 CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. [gi-modules](https://gisma-courses.github.io/gi-modules) provides a live demo
 
-It is based on [huxblog Jekyll Theme](https://github.com/Huxpro/huxpro.github.io)
-and [Clean Blog Jekyll Theme](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll).
+It is based on [huxblog Jekyll Theme](https://github.com/Huxpro/huxpro.github.io), [Clean Blog Jekyll Theme] (https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll) which were converted by [Zhao Huabing](https://github.com/zhaohuabing) to the [hugo-theme-cleanwhite](https://github.com/zhaohuabing/hugo-theme-cleanwhite) theme. Zhao Huabing has done an awesome job porting it to Hugo. 
 
-These two upstream projects have done awesome jobs to create a blog theme, what I'm doing here is porting it to Hugo, of which I like the simplicity and the much faster compiling speed. Some other features which I think could be useful, such as site search with algolia and proxy for Disqus access in China, have also been built in the CleanWhite theme. Other fancy features of upstream projects are not supported by this Hugo theme, I'd like to make it as simple as possible and only focus on blog purpose, at least for now.
-While I created this theme, I followed the Hugo theme best practice and tried to make every part of the template as a replaceable partial html, so it could be much easier for you to make your customization based on it.
+The gisma extension just fiddles in the great [blogdown](https://github.com/rstudio/blogdown) provided by [Yihui Xie](https://github.com/yihui) and some more features like direkt PDF support, accordions and the integration of the [hugo-cite](https://github.com/loup-brun/hugo-cite) extension. 
 
 ## Quick Start
 
