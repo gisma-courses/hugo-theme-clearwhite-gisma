@@ -2,9 +2,9 @@
 
 CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. [gi-modules](https://gisma-courses.github.io/gi-modules) provides a live demo
 
-It is based on [huxblog Jekyll Theme](https://github.com/Huxpro/huxpro.github.io), [Clean Blog Jekyll Theme] (https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll) which were converted by [Zhao Huabing](https://github.com/zhaohuabing) to the [hugo-theme-cleanwhite](https://github.com/zhaohuabing/hugo-theme-cleanwhite) theme. Zhao Huabing has done an awesome job porting it to Hugo. 
+It is based on [huxblog Jekyll Theme](https://github.com/Huxpro/huxpro.github.io), [Clean Blog Jekyll Theme](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll) which were converted by [Zhao Huabing](https://github.com/zhaohuabing) to the [hugo-theme-cleanwhite](https://github.com/zhaohuabing/hugo-theme-cleanwhite) theme. Zhao Huabing has done an awesome job porting it to Hugo. 
 
-The gisma extension just fiddles in the great [blogdown](https://github.com/rstudio/blogdown) provided by [Yihui Xie](https://github.com/yihui) and some more features like direkt PDF support, accordions and the integration of the [hugo-cite](https://github.com/loup-brun/hugo-cite) extension. 
+The gisma extension just fiddles in the great [blogdown](https://github.com/rstudio/blogdown) package approach (what basically supports full Rmarkdown) provided by [Yihui Xie](https://github.com/yihui) and some more features like direkt PDF support, accordions and the integration of the [hugo-cite](https://github.com/loup-brun/hugo-cite) extension. 
 
 ## Quick Start
 
