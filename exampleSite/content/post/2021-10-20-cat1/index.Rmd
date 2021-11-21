@@ -11,6 +11,7 @@ description: description
 image: /images/header-cat1.jpg
 weight: 3
 slug: []
+bibFile: /biblio/lidar/bib.json # path relative to project root
 ---
 <style>.myDiv {margin-top: -36px;margin-right: -45%; text-align: right;}</style>
 <div class="myDiv">
@@ -115,3 +116,23 @@ blogdown::shortcode("acco", "item1", "item2", "item3",
                     .type = "html")
 ```
 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+blogdown::shortcode("bibliography",.type = "html")
+```
+
+```{r echo=FALSE}
+DiagrammeR::mermaid("graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;")
+``` 
+I have more [^1] to say.
+I have more more [^anymark] to say.
+
+[^1]: Footnote example.
+[^anymark]: Another footnote example.
+```{r echo=FALSE}
+blogdown::shortcode("cite",  "test",.type = "html")
+```
