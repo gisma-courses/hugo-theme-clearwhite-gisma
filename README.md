@@ -17,8 +17,8 @@ $ mkdir test
 $ cd test
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
-$ cp -r hugo-theme-cleanwhite/exampleSite/** ../
+$ git clone (https://github.com/gisma-courses/hugo-theme-cleanwhite-gisma.git
+$ cp -r hugo-theme-cleanwhite-gisma/exampleSite/** ../
 $ cd ..
 $ hugo serve
 ```
@@ -27,7 +27,7 @@ If your site is already a git project, you may want to choose to add the cleanwh
 
 ```
 $ mkdir themes
-$ git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
+$ git submodule add https://github.com/gisma-courses/hugo-theme-cleanwhite-gisma.git themes/hugo-theme-cleanwhite-gisma
 ```
 Run  Hugo Build-in Server Locally
 
@@ -39,7 +39,7 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo
 
 ### Comments
-The comments system is powered by [utterance](https://utterance.es) via github. 
+The comments system is powered by [utterances](https://utteranc.es/) via github. 
 
 ### Analytics
 
